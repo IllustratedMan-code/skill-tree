@@ -1,0 +1,179 @@
+:root {
+    --color0: #2e3440;
+    --color1: #3B4252;
+    --color2: #434c5e;
+    --color3: #4c566a;
+    --color4: #d8dee9;
+    --color5: #e5e9f0;
+    --color6: #eceff4;
+    --color7: #8fBCBB;
+    --color8: #88c0d0;
+    --color9: #81a1c1;
+    --color10: #5e81ac;
+    --color11: #bf616a;
+    --color12: #d08770;
+    --color13: #ebcb8b;
+    --color14: #a3be8c;
+    --color15: #b48ead;
+
+}
+
+
+
+body {
+    background-color: var(--color0);
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    transition: 0.3s ease-out;
+}
+
+#toc {
+    flex: 1;
+    background-color: var(--color0);
+    color: var(--color2);
+    padding: 1%;
+    position: sticky;
+    top: 10%;
+    align-self: flex-start;
+    box-shadow: 0px 0px 20px var(--color8);
+    border-radius: 25px;
+    margin: 20px;
+    transition: 0.3s ease-out;
+    text-align: left;
+}
+#TOC ul {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    
+}
+
+
+#content {
+    flex: 7;
+    background-color: var(--color2);
+    color: var(--color4);
+    padding: 5%;
+    border-radius: 25px;
+    box-shadow: 0px 0px 20px var(--color8);
+    margin: 20px;
+}
+
+#content header {
+    color: var(--color14);
+    border: 2px solid var(--color6);
+    background-color: var(--color2);
+    padding: 1%;
+    border-radius: 25px;
+    text-align: center;
+    margin: 5px;
+}
+
+body > header {
+    background-color: var(--color0);
+    color: var(--color11);
+    top: 0;
+    position: sticky;
+    display: grid;
+    grid-template-columns: 10% auto 10%;
+    grid-template-rows: auto;
+    text-align: center;
+}
+body > header > div > h2 {
+    margin: 0;
+    padding: 0;
+
+}
+#github {
+    fill: var(--color4);
+}
+body > footer {
+    background-color: var(--color1);
+    text-align: center;
+    color: var(--color11);
+}
+
+
+
+li a {
+    color: var(--color5);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+li {
+    background-color: var(--color0);
+    border-radius: 5px;
+    list-style: none;
+}
+
+
+#TOC > ul > li > a {
+    
+}
+
+#TOC li {
+    position: relative;
+}
+
+
+#TOC > ul > li > ul{
+    opacity: 0%;
+    transition: all 1s ease-out;
+    transition-delay: 1s;
+    max-height: 0;
+}
+#TOC > ul > li.visible > ul {
+    opacity: 100%;
+    transition: all 1s ease-in;
+    max-height: 1000px;
+    height: auto;
+}
+#TOC > ul > li:hover > ul {
+    opacity: 100%;
+    transition: all 1s ease-in;
+    max-height: 1000px;
+    height: auto;
+}
+#TOC > ul > li {
+    margin: 10px;
+}
+
+#TOC > ul > li > ul > li ul{
+    display: none;
+}
+#TOC > ul > li > ul > li{
+    border-left: 5px solid var(--color15);
+    padding-left: 5px;
+    border-radius: 0;
+}
+#TOC li:hover > a{
+    color: var(--color15)
+}
+
+#content > h1 {
+    color: var(--color8)
+}
+#content > h2 {
+    color: var(--color9)
+}
+
+    
+@media screen and (max-width: 1000px) {
+    .container {
+        flex-direction: column;
+    }
+    #toc {
+        position: static;
+    }
+    #TOC > ul > li > ul{
+        opacity: 100%;
+        transition: all 0.3s ease-out;
+        max-height: 1000px;
+        height:auto;
+}
+}
+
+
