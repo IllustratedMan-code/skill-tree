@@ -1,0 +1,10 @@
+* Heading
+[[https:google.com]]
+[[Heading]]
+
+[[Heading]]
+
+[[file:wiki.org::First Heading][Hi There]]
+
+
+OOga Booga

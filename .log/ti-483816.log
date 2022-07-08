@@ -1,0 +1,35 @@
+[11:10:15.402] Global cache location '/home/david/.cache/typescript/4.7', safe file path '/home/david/.emacs.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/typingSafeList.json', types map path /home/david/.emacs.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/typesMap.json
+[11:10:15.403] Processing cache location '/home/david/.cache/typescript/4.7'
+[11:10:15.403] Trying to find '/home/david/.cache/typescript/4.7/package.json'...
+[11:10:15.405] Loaded content of '/home/david/.cache/typescript/4.7/package.json': {"private":true,"dependencies":{"types-registry":"^0.1.598"}}
+[11:10:15.405] Loaded content of '/home/david/.cache/typescript/4.7/package-lock.json'
+[11:10:15.406] Finished processing cache location '/home/david/.cache/typescript/4.7'
+[11:10:15.406] Process id: 483823
+[11:10:15.406] NPM location: /nix/store/i9x1ajwr756r2z9jnb2nhip50a3xms51-nodejs-16.15.0/bin/npm (explicit '--npmLocation' not  provided)
+[11:10:15.406] validateDefaultNpmLocation: false
+[11:10:15.406] Npm config file: /home/david/.cache/typescript/4.7/package.json
+[11:10:15.406] Updating types-registry npm package...
+[11:10:15.406] Exec: /nix/store/i9x1ajwr756r2z9jnb2nhip50a3xms51-nodejs-16.15.0/bin/npm install --ignore-scripts types-registry@latest
+[11:10:17.928]     Succeeded. stdout:
+    
+    up to date, audited 2 packages in 2s
+
+found 0 vulnerabilities
+
+[11:10:17.929] Updated types-registry npm package
+[11:10:17.982] Got install request {"projectName":"/dev/null/inferredProject1*","fileNames":["/home/david/.emacs.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/lib.es5.d.ts","/home/david/.emacs.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/lib.es2015.d.ts","/home/david/.emacs.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/lib.es2016.d.ts","/home/david/.emacs.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/lib.dom.d.ts","/home/david/.emacs.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/lib.dom.iterable.d.ts","/home/david/.emacs.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/lib.webworker.importscripts.d.ts","/home/david/.emacs.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/lib.scripthost.d.ts","/home/david/.emacs.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/lib.es2015.core.d.ts","/home/david/.emacs.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/lib.es2015.collection.d.ts","/home/david/.emacs.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/lib.es2015.generator.d.ts","/home/david/.emacs.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/lib.es2015.iterable.d.ts","/home/david/.emacs.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/lib.es2015.promise.d.ts","/home/david/.emacs.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/lib.es2015.proxy.d.ts","/home/david/.emacs.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/lib.es2015.reflect.d.ts","/home/david/.emacs.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/lib.es2015.symbol.d.ts","/home/david/.emacs.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts","/home/david/.emacs.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/lib.es2016.array.include.d.ts","/home/david/.emacs.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/lib.es2016.full.d.ts","/home/david/Documents/skill-tree/theme/theme.js"],"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":[],"projectRootPath":"/home/david/Documents/skill-tree/theme","kind":"discover"}
+[11:10:18.000] Loaded safelist from types map file '/home/david/.emacs.d/.local/etc/lsp/npm/typescript/lib/node_modules/typescript/lib/typesMap.json'
+[11:10:18.001] Explicitly included types: []
+[11:10:18.001] Inferred typings from unresolved imports: []
+[11:10:18.001] Result: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/david/Documents/skill-tree/theme/bower_components","/home/david/Documents/skill-tree/theme/node_modules"]}
+[11:10:18.001] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/david/Documents/skill-tree/theme/bower_components","/home/david/Documents/skill-tree/theme/node_modules"]}
+[11:10:18.002] DirectoryWatcher:: Added:: WatchInfo: /home/david/Documents/skill-tree/theme/bower_components
+[11:10:18.002] DirectoryWatcher:: Added:: WatchInfo: /home/david/Documents/skill-tree/theme/bower_components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[11:10:18.003] Elapsed:: 1.0437059998512268ms DirectoryWatcher:: Added:: WatchInfo: /home/david/Documents/skill-tree/theme/bower_components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[11:10:18.003] DirectoryWatcher:: Added:: WatchInfo: /home/david/Documents/skill-tree/theme/node_modules
+[11:10:18.003] DirectoryWatcher:: Added:: WatchInfo: /home/david/Documents/skill-tree/theme/node_modules 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[11:10:18.003] Elapsed:: 0.07061100006103516ms DirectoryWatcher:: Added:: WatchInfo: /home/david/Documents/skill-tree/theme/node_modules 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[11:10:18.003] Sending response:
+    {"projectName":"/dev/null/inferredProject1*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typings":[],"unresolvedImports":[],"kind":"action::set"}
+[11:10:18.004] Response has been sent.
+[11:10:18.004] No new typings were requested as a result of typings discovery
