@@ -1,0 +1,5 @@
+
+* Skill Tree
+The aim behind this project is to create a static site generator for a personal wiki. This wiki should have a landing page that visualizes the content of the wiki as a graph in two ways. The first should be a graph based on the link relationships between wiki pages. The second should be a "skill tree" of prerequisite knowledge for each page. This will be defined in each page in some way.
+* Test Site
+Visit the test site here: [[https://illustratedman-code.github.io/skill-tree/]]
