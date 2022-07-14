@@ -32,7 +32,7 @@
     packages."${target_system}" = with pkgs; {
       default = stdenv.mkDerivation rec {
         name = "skill-tree";
-        buildInputs = [pandoc yaml2json mkPython];
+        buildInputs = [pandoc yaml2json mkPython nodePackages.http-server which];
         src = ./.;
         installPhase = ''
             mkdir $out
@@ -50,6 +50,10 @@
             cp -r ${src}/theme $out/theme
             mkdir $out/base16
             yaml2json < base16.yaml > $out/base16/base16.json
+            mkdir $out/bin
+            echo "#!/usr/bin/env bash" >> "$out/bin/skill-tree"
+            echo "exec $(which http-server) $out" >> "$out/bin/skill-tree"
+            chmod +x $out/bin/skill-tree
         '';
       };
     };
