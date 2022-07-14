@@ -32,7 +32,7 @@
     packages."${target_system}" = with pkgs; {
       default = stdenv.mkDerivation rec {
         name = "skill-tree";
-        buildInputs = [pandoc yaml2json mkPython nodePackages.http-server which];
+        buildInputs = [pandoc yaml2json mkPython nodePackages.http-server which ];
         src = ./.;
         installPhase = ''
             mkdir $out
@@ -59,7 +59,7 @@
     };
     devShells.${target_system} = with pkgs; rec{
       default = mkShell{
-        buildInputs = [sumneko-lua-language-server nodePackages.http-server mkPythonShell] ++ packages.${target_system}.default.buildInputs;
+        buildInputs = [sumneko-lua-language-server nodePackages.http-server mkPythonShell nodePackages.yaml-language-server] ++ packages.${target_system}.default.buildInputs;
       };
     };
   };
