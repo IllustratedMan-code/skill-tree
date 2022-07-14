@@ -1,0 +1,2 @@
+#!/nix/store/j9rc786ylq8cid4zgcn6idknilkbd4ax-bash-5.1-p16/bin/bash
+exec /nix/store/fyisahm597fd846wrssyqlyq32ivygbl-http-server-14.1.1/bin/http-server /nix/store/8p12grk0hwkbyd5xgf13l7jih58ja1xj-skill-tree

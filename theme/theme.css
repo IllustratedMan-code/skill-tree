@@ -1,0 +1,297 @@
+body {
+    background-color: var(--color0);
+    font-family: Garamond, serif;
+}
+
+
+code span.al { color: var(--color6); font-weight: bold; } /* Alert */
+code span.an { color: var(--color12); font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: var(--color12); } /* Attribute */
+code span.bn { color: var(--color12); } /* BaseN */
+code span.bu { color: var(--color10); } /* BuiltIn */
+code span.cf { color: var(--color14); font-weight: bold; } /* ControlFlow */
+code span.ch { color: var(--color11); } /* Char */
+code span.cn { color: var(--color9); } /* Constant */
+code span.co { color: var(--color3); font-style: italic; } /* Comment */
+code span.cv { color: var(--color3); font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: var(--color15); font-style: italic; } /* Documentation */
+code span.dt { color: var(--color10); } /* DataType */
+code span.dv { color: var(--color12); } /* DecVal */
+code span.er { color: var(--color6); font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: var(--color9); } /* Float */
+code span.fu { color: var(--color13); } /* Function */
+code span.im { color: var(--color13); font-weight: bold; } /* Import */
+code span.in { color: var(--color12); font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: var(--color14); font-weight: bold; } /* Keyword */
+code span.op { color: var(--color5); } /* Operator */
+code span.ot { color: var(--color14); } /* Other */
+code span.pp { color: var(--color15); } /* Preprocessor */
+code span.sc { color: var(--color11); } /* SpecialChar */
+code span.ss { color: var(--color15); } /* SpecialString */
+code span.st { color: var(--color11); } /* String */
+code span.va { color: var(--color8); } /* Variable */
+code span.vs { color: var(--color11); } /* VerbatimString */
+code span.wa { color: var(--color12); font-weight: bold; font-style: italic; } /* Warning */
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    transition: 0.3s ease-out;
+}
+.right{
+    display: flex;
+    flex: 1;
+    margin-right: 20px;
+    justify-content: flex-end;
+    align-items: center;
+}
+.center{
+    flex: 2;
+}
+.left{
+    margin-left: 20px;
+    display: flex;
+    flex: 1;
+    justify-content: flex-begin;
+    align-items: center;
+
+}
+select {
+    color: var(--color4);
+    background-color: var(--color1);
+    border: 0px solid var(--color2);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 2px;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+}
+select:hover {
+    background-color: var(--color0);
+    color: var(--color5)
+}
+.right button {
+    flex: 1;
+}
+.right svg{
+    width: 20px;
+}
+
+#left-col {
+    position: sticky;
+    top: 6%;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: 95vh;
+    overflow-y: auto;
+    overflow-x: visible;
+    scrollbar-width: none;
+}
+
+
+.col-item {
+    flex: 1;
+    background-color: var(--color0);
+    color: var(--color2);
+    padding: 1%;
+    align-self: flex-start;
+    box-shadow: 0px 0px 20px var(--color2);
+    border-radius: 25px;
+    margin: 20px;
+    transition: 0.3s ease-out;
+    text-align: left;
+}
+#links ul {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+#links li {
+    margin: 10px;
+}
+#left-col h {
+    color: var(--color10);
+    margin-top: 10px;
+    font-weight: bold;
+}
+#left-col div {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+#TOC ul {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    
+}
+
+
+#content {
+    flex: 1;
+    background-color: var(--color0);
+    color: var(--color5);
+    padding: 5%;
+    border-radius: 25px;
+    box-shadow: 0px 0px 20px var(--color2);
+    margin: 20px;
+}
+
+#content header {
+    color: var(--color4);
+    border: 2px solid var(--color6);
+    background-color: var(--color1);
+    padding: 1%;
+    border-radius: 25px;
+    text-align: center;
+    margin: 5px;
+}
+
+body > header {
+    background-color: var(--color1);
+    color: var(--color4);
+    width: 100%;
+    border-radius: 5px;
+    top: 1%;
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 20% auto 20%;
+    grid-template-rows: auto;
+    text-align: center;
+}
+body > header > div > h2 {
+    margin: 0;
+    padding: 0;
+
+}
+#github {
+    fill: var(--color4);
+}
+body > footer {
+    background-color: var(--color0);
+    text-align: center;
+    color: var(--color11);
+}
+
+
+
+li a {
+    color: var(--color5);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+li {
+    background-color: var(--color0);
+    border-radius: 5px;
+    list-style: none;
+}
+
+
+#TOC > ul > li > a {
+    
+}
+
+#TOC li {
+    position: relative;
+}
+#TOC {
+    display: flex;
+}
+
+#TOC > ul > li > ul{
+    opacity: 0%;
+    transition: all 0.2s ease-out;
+    max-height: 0;
+    margin-left: 1em;
+}
+#TOC > ul > li.visible > ul {
+    opacity: 100%;
+    transition: all 0.2s ease-in;
+    max-height: 1000px;
+    height: auto;
+}
+#TOC > ul > li {
+    margin: 10px;
+}
+
+#TOC > ul > li > ul > li ul{
+    display: none;
+}
+#TOC > ul > li > ul > li{
+    border-left: 5px solid var(--color15);
+    padding-left: 5px;
+    border-radius: 0;
+}
+#left-col li:hover > a{
+    color: var(--color15)
+}
+:target {
+    scroll-margin-top: 2em;
+    font-style: oblique;
+    text-decoration: underline;
+}
+
+#content > h1 {
+    color: var(--color10)
+}
+#content > h2 {
+    color: var(--color10)
+}
+
+button {
+    height: 100%;
+    background-color: transparent;
+    border: 0px;
+    color: var(--color13);
+    width: 10%;
+}
+button svg {
+    width: 100%;
+    height: 100%;
+    fill: var(--color8);
+    transition: transform 0.3s ease-out;
+}
+button:hover svg {
+    fill: var(--color13);
+}
+li.visible > button svg {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease-out;
+}
+
+div.sourceCode{
+    background-color: var(--color0);
+    padding: 5px;
+    border-radius: 10px;
+    border: 3px solid var(--color1);
+}
+@media screen and (max-width: 1000px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+    }
+    #left-col {
+        flex: 1;
+        width: 100%;
+        position: static;
+        flex-direction: row;
+        overflow: revert;
+        justify-content: center;
+    }
+    #TOC > ul > li > ul{
+        opacity: 100%;
+        transition: all 0.3s ease-out;
+        max-height: 1000px;
+        height:auto;
+}
+}
+
+

@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="" >
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+                    <title>Wiki</title>
+    <style>
+        code{white-space: pre-wrap;}
+        span.smallcaps{font-variant: small-caps;}
+        span.underline{text-decoration: underline;}
+        div.column{display: inline-block; vertical-align: top; width: 50%;}
+        div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+        ul.task-list{list-style: none;}
+        pre > code.sourceCode { white-space: pre; position: relative; }
+        pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+        pre > code.sourceCode > span:empty { height: 1.2em; }
+        .sourceCode { overflow: visible; }
+        code.sourceCode > span { color: inherit; text-decoration: inherit; }
+        div.sourceCode { margin: 1em 0; }
+        pre.sourceCode { margin: 0; }
+        @media screen {
+        div.sourceCode { overflow: auto; }
+        }
+        @media print {
+        pre > code.sourceCode { white-space: pre-wrap; }
+        pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+        }
+        pre.numberSource code
+          { counter-reset: source-line 0; }
+        pre.numberSource code > span
+          { position: relative; left: -4em; counter-increment: source-line; }
+        pre.numberSource code > span > a:first-child::before
+          { content: counter(source-line);
+            position: relative; left: -1em; text-align: right; vertical-align: baseline;
+            border: none; display: inline-block;
+            -webkit-touch-callout: none; -webkit-user-select: none;
+            -khtml-user-select: none; -moz-user-select: none;
+            -ms-user-select: none; user-select: none;
+            padding: 0 4px; width: 4em;
+            color: #aaaaaa;
+          }
+        pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+        div.sourceCode
+          {   }
+        @media screen {
+        pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+        }
+        code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+        code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+        code span.at { color: #7d9029; } /* Attribute */
+        code span.bn { color: #40a070; } /* BaseN */
+        code span.bu { color: #008000; } /* BuiltIn */
+        code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+        code span.ch { color: #4070a0; } /* Char */
+        code span.cn { color: #880000; } /* Constant */
+        code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+        code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+        code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+        code span.dt { color: #902000; } /* DataType */
+        code span.dv { color: #40a070; } /* DecVal */
+        code span.er { color: #ff0000; font-weight: bold; } /* Error */
+        code span.ex { } /* Extension */
+        code span.fl { color: #40a070; } /* Float */
+        code span.fu { color: #06287e; } /* Function */
+        code span.im { color: #008000; font-weight: bold; } /* Import */
+        code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+        code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+        code span.op { color: #666666; } /* Operator */
+        code span.ot { color: #007020; } /* Other */
+        code span.pp { color: #bc7a00; } /* Preprocessor */
+        code span.sc { color: #4070a0; } /* SpecialChar */
+        code span.ss { color: #bb6688; } /* SpecialString */
+        code span.st { color: #4070a0; } /* String */
+        code span.va { color: #19177c; } /* Variable */
+        code span.vs { color: #4070a0; } /* VerbatimString */
+        code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+        .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    </style>
+        <link rel="stylesheet" href="theme/theme.css" />
+                <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+        <header>
+            <div class=left>
+                <h2> left </h1>
+                <button>
+                    <svg id="github"  width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z"/></svg>
+                </button>
+            </div>
+
+            <div class=center>
+                <h2> center </h1>
+            </div>
+            <div class=right>
+                <select name="theme", id="theme", onChange="setTheme(this.value);"></select>
+            </div>
+        </header>
+        <div class="container">
+        <div id="left-col">
+                        <div id="toc" class=col-item>
+                <h> Contents </h>
+                <nav id="TOC" role="doc-toc">
+                                        <ul>
+                                        <li><a
+                                        href="#first-heading">First
+                                        Heading</a>
+                                        <ul>
+                                        <li><a
+                                        href="#subheading-1">Subheading
+                                        1</a></li>
+                                        <li><a
+                                        href="#subheading-2">Subheading
+                                        2</a></li>
+                                        </ul></li>
+                                        <li><a
+                                        href="#second-heading">Second
+                                        Heading</a>
+                                        <ul>
+                                        <li><a
+                                        href="#subheading-gloob">Subheading
+                                        gloob</a>
+                                        <ul>
+                                        <li><a
+                                        href="#sub-sub-heading">Sub-sub-heading</a></li>
+                                        </ul></li>
+                                        <li><a
+                                        href="#subheading-2-1">Subheading
+                                        2</a></li>
+                                        </ul></li>
+                                        <li><a
+                                        href="#third-heading">Third
+                                        Heading</a>
+                                        <ul>
+                                        <li><a
+                                        href="#subheading-1-1">Subheading
+                                        1</a></li>
+                                        <li><a
+                                        href="#subheading-2-2">Subheading
+                                        2</a></li>
+                                        </ul></li>
+                                        <li><a
+                                        href="#fourth-heading">Fourth
+                                        Heading</a></li>
+                                        </ul>
+                </nav>
+            </div>
+                                    <div id="links" class=col-item>
+                <h> Links </h>
+                <nav id="LINKS" >
+                                    <ul>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    <li><a href="#first-heading">First
+                                    Heading</a>
+                                    </li>
+                                    </ul>
+                </nav>
+            </div>
+                    </div>
+
+
+        <div id="content">
+                        <header id="title-block-header">
+                <h1 class="title">Wiki</h1>
+                                                                            </header>
+                        <h1 id="first-heading">First Heading</h1>
+                        <p>as;dflkjasd;lfkjas;ldkj;alsdkf;lakdjfa;szldk
+                        "Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut
+                        enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur. Excepteur sint
+                        occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est
+                        laborum."</p>
+                        <div class="sourceCode" id="cb1"><pre
+                        class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;hello world&quot;</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> I_hate_you():</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;farts&quot;</span>)</span></code></pre></div>
+                        <h2 id="subheading-1">Subheading 1</h2>
+                        <p><span class="spurious-link"
+                        target="First Heading"><em>First
+                        Heading</em></span></p>
+                        <p>"Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut
+                        enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur. Excepteur sint
+                        occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est
+                        laborum."</p>
+                        <h2 id="subheading-2">Subheading 2</h2>
+                        <p>"Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut
+                        enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur. Excepteur sint
+                        occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est
+                        laborum."</p>
+                        <h1 id="second-heading">Second Heading</h1>
+                        <p>"Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut
+                        enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur. Excepteur sint
+                        occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est
+                        laborum."</p>
+                        <h2 id="subheading-gloob">Subheading gloob</h2>
+                        <p>"Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut
+                        enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur. Excepteur sint
+                        occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est
+                        laborum."</p>
+                        <h3 id="sub-sub-heading">Sub-sub-heading</h3>
+                        <p>blah blah blah</p>
+                        <ol>
+                        <li><p>Sub-Sub-Sub-Sub ita a heading</p></li>
+                        </ol>
+                        <h2 id="subheading-2-1">Subheading 2</h2>
+                        <p>"Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut
+                        enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur. Excepteur sint
+                        occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est
+                        laborum."</p>
+                        <h1 id="third-heading">Third Heading</h1>
+                        <p>"Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut
+                        enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur. Excepteur sint
+                        occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est
+                        laborum." "Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex
+                        ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur. Excepteur sint
+                        occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est
+                        laborum."</p>
+                        <h2 id="subheading-1-1">Subheading 1</h2>
+                        <p>"Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut
+                        enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur. Excepteur sint
+                        occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est
+                        laborum."</p>
+                        <h2 id="subheading-2-2">Subheading 2</h2>
+                        <p>"Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut
+                        enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur. Excepteur sint
+                        occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est
+                        laborum."</p>
+                        <h1 id="fourth-heading">Fourth Heading</h1>
+                        <p>"Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut
+                        enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur. Excepteur sint
+                        occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est
+                        laborum."</p>
+                        <p>"Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut
+                        enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur. Excepteur sint
+                        occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est
+                        laborum."</p>
+            <script src="theme/theme.js"></script>
+                <footer>
+                            <h1> footer </h1>
+                </footer>
+                </div>
+    </div>
+</body>
+
+</html>
